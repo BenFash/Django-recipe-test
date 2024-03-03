@@ -24,7 +24,15 @@
 
 <body>
     {% include 'includes/header.html' %}
-    <h1>HEllos Worlds</h1>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    {% include 'includes/footer.html' %}
+
+    <script src="https://kit.fontawesome.com/247c7def27.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

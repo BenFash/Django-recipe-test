@@ -8,7 +8,7 @@
 
     /* Colors */
     --background: #262626;
-    --blue: #255C99;
+    --blue: #0d6efd;
     --black: #000;
     --peach: #FCDE9C;
     --white: #fff;
@@ -41,18 +41,31 @@ h6 {
 
 main {
     flex: 1 0 auto;
-    background-color: var(--peach);
+    background-color: var(--white);
 }
 
 /* Footer */
 footer {
     flex-shrink: 0;
+    background-color: var(--peach);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: var(--border);
 }
+
+.social-icons {
+    font-size: 3rem;
+    margin: .5rem .5rem;
+}
+
+
 
 /* Header  */
 .navbar {
-    background-color: var(--peach);
-    box-shadow: var(--smal-box-shadow);
+    background-color: var(--peach) !important;
+    box-shadow: var(--smal-box-shadow) !important;
 }
 
 a.nav-links {
@@ -62,4 +75,19 @@ a.nav-links {
 img.logo {
     width: 10.75rem;
     height: 6rem;
+}
+
+.active {
+    border-bottom: 2px solid var(--blue) !important;
+    font-weight: 500;
+
+}
+
+/* Form */
+
+.form {
+    width: 100%;
+    margin: 3% auto;
+    box-shadow: var(--smal-box-shadow);
+    border-radius: 5px;
 }
